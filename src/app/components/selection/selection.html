@@ -1,0 +1,23 @@
+<div class="title">
+    <h2>Fits with you</h2>
+</div>
+
+<div class="selection-inside">
+  @for (product of products; track product.id) {
+    <div class="product-card">
+      <div class="product-img" [style.background-image]="'url(' + product.imgURL + ')'"></div>
+
+      @if (product.disscount > 0) {
+        <p class="disscount">{{ product.disscount }}% OFF</p>
+      }
+
+      <h4 class="product-name">{{ product.name }}</h4>
+
+      @if (product.disscount > 0) {
+        <p class="product-price">USD <span class="temp-deprecated-price">{{ product.originalPrice }}</span> {{ product.price }}</p>
+      } @else {
+        <p class="product-price">USD {{ product.price }}</p>
+      }
+    </div>
+  }
+</div>

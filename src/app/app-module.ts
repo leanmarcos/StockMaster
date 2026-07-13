@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
+import { SponsoredBanner } from './components/sponsored_banner/sponsored-banner-component';
+import { Selection } from './components/selection/selection.component';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,9 @@ import { App } from './app';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SponsoredBanner,
+    Selection
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),

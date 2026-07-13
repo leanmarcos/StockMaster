@@ -1,0 +1,15 @@
+.sponsored{
+    width: 1239px;
+    height: 245px;
+    background-size:cover ;
+    background-position-y: 32%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: .02px solid var(--beige);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.product-card{
+    color: var(--beige);
+}
