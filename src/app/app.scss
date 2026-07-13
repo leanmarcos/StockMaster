@@ -1,0 +1,123 @@
+
+.upHeader{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: var(--teal);
+    color: var(--beige);
+    padding: 1.5%;
+    margin: 0;
+}
+
+.headerLeft, .headerRight, .headerCenter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLeft{
+    gap: 7%;
+}
+
+.headerRight{
+    gap: 7%;
+}
+
+.headerRight a, .headerRight img, .headerLeft a, .headerLeft img{
+    display: inline-block;
+        font-family: "Lato", sans-serif;
+    color: var(--beige);
+    font-size: larger;
+     transition: transform 0.2s ease;
+    cursor: pointer;
+
+    &:hover{
+        transform:translateY(-1px);
+    }
+}
+
+.headerRight img{
+    cursor: pointer;
+}
+
+
+
+#logo{
+    height: var(--desktop_img_size_m);
+}
+
+.headerIcon{
+    height: var(--desktop_img_size_s);
+}
+
+.subHeader{
+    background-color: var(--authentic_theal);
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 1.7%;
+    padding-right: 1.7%;
+    gap: 2x;
+
+}
+
+.subHeader a{
+    color: var(--beige);
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+
+    &:hover{
+        text-decoration: underline;
+        transform: translateY(-1px);
+    }
+}
+
+
+#header-search{
+    width: 652px;
+    height: 36px; 
+    border-radius: 35px;
+    border: .1px solid transparent;
+    background-color: #3F6C5E;
+
+    &::placeholder{
+        padding: 4px;
+        color: var(--beige);
+        opacity: .7;
+    }
+
+    &:focus{
+        color: var(--beige);
+        padding-block: 0px;
+        outline: none;
+    }
+}
+
+
+#header-search-cta{
+    width: 20%;
+    background-color: var(--authentic_theal);
+    color: var(--beige);
+    font-family: "Lato", sans-serif;
+    border: 1px solid transparent;
+    height: 36px;
+    cursor: pointer;
+    font-weight: bolder;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.1s ease;
+
+    &:hover{
+        background-color: #0A332D;
+        color:#B3CBFF;
+    }
+}
+
+.spo-ban, .selec{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}

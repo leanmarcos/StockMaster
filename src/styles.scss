@@ -1,0 +1,28 @@
+:root{
+
+    /* COLORS */
+    --imperial_blue:  #0A2069;
+    --beige: #F2F2D8;
+    --lavender_tonic: #C8BEFA;
+    --black_market: #1E2445;
+
+    --periwinkle: #B3CBFF;
+    --teal: #06392F;
+    --authentic_theal: #035352;
+    --main_black: #010000;
+
+    /* DESKTOP SIZES */
+    --desktop_img_size_xs: 16px;
+    --desktop_img_size_s: 24px;
+    --desktop_img_size_m: 36px;
+    --desktop_img_size_l: 48px;
+    --desktop_img_size_xl: 56px;
+    --desktop_img_size_xxl: 64px;
+}
+
+body{
+    margin:0px;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #010000;
+}
