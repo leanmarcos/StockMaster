@@ -4,7 +4,8 @@ import { Sponsor } from "./sponsored-banner-interface";
 @Component({
         selector: 'sponsored-banner',
         templateUrl: './sponsored-banner.html',
-        styleUrl: './sponsored-banner.scss'
+        styleUrl: './sponsored-banner.scss',
+        standalone: true
 })
 
 export class SponsoredBanner implements OnInit, OnDestroy {

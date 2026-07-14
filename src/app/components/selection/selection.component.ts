@@ -1,10 +1,12 @@
 import { Component } from "@angular/core";
 import { Article } from "./selection.interface";
+import { Router } from "@angular/router";
 
 @Component({
     'selector': 'selection',
     templateUrl: './selection.html',
-    styleUrl: './selection.scss' 
+    styleUrl: './selection.scss',
+    standalone: true
 })
 
 export class Selection {
@@ -15,6 +17,7 @@ export class Selection {
         {id: 4, name: 'Smartband Xiaomi Redmi 8', imgURL: '/xiaomiredmi.png', price: 43, originalPrice: 43, disscount: 0 }
     ]
 
+    constructor(private router : Router) {}
 
      ngOnInit() {
         for (const p of this.products) {
@@ -22,5 +25,9 @@ export class Selection {
                 p.price = p.originalPrice - (p.originalPrice * p.disscount) / 100;
             }
         }
+    }
+
+    getToProduct(id : number){
+        this.router.navigate(['/product', id])
     }
 }

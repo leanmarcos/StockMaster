@@ -4,7 +4,7 @@
 
 <div class="selection-inside">
   @for (product of products; track product.id) {
-    <div class="product-card">
+    <div class="product-card" (click)="getToProduct(product.id)">
       <div class="product-img" [style.background-image]="'url(' + product.imgURL + ')'"></div>
 
       @if (product.disscount > 0) {
