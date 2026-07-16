@@ -1,17 +1,17 @@
 <div class="product-inside">
 
-
+     @if(product){
     <div class="product-selected-left">
-        <p class="footprint">Home / Sneakers / New Balance 530 Unisex</p>
+        <p class="footprint">Home / Sneakers / {{product.name}}</p>
 
-        <div class="product-image">
+        <div class="product-image" [style.background-image]="'url(' + product.imgURL + ')'">
 
         </div>
     </div>
 
     <div class="product-right">
 
-        @if(product){
+       
         <div class="product-hot">
             <p>HOT!</p>
         </div>
@@ -19,23 +19,24 @@
         <div class="product-main-info">
 
             <h2 class="product-name">{{product.name}}</h2>
-            <p class="product-description">The original MR530 combines the aesthetics of the turn of the millennium with
-                the reliability of a high-mileage running shoe. The new 530 model offers a contemporary, everyday style
-                with a performance-oriented design. The segmented ABZORB midsole is paired with a classic upper design
-                featuring synthetic and mesh overlays, which uses bold angles and curves to create a distinctive,
-                high-tech look.</p>
+            <p class="product-description">{{product.description}}</p>
         </div>
 
         <div class="calification">
             <img src="/calification.png" alt="calification-star">
-            <p class="product-review">4.4/5 (1500) - 2000 sold</p>
+            <p class="product-review">{{product.reviewAverage}}/5 ({{product.reviewAmount}}) - {{product.soldAmount}} sold</p>
         </div>
 
-        <div class="product-price">
-            <p class="product-disscount">{{product.disscount}}% OFF</p>
-            <p class="product-actual-price">USD <span class="product-original-price">250</span> 150</p>
-        </div>
-
+       <div class="product-price">
+    @if (product.disscount > 0) {
+        <p class="product-disscount">{{ product.disscount }}% OFF</p>
+        <p class="product-actual-price">
+            USD <span class="product-original-price">{{ product.originalPrice }}</span> {{ product.price }}
+        </p>
+    } @else {
+        <p class="product-actual-price">USD {{ product.price }}</p>
+    }
+</div>
         <form action="" class="product-size">
             <div class="size-inside">
                 <label for="" class="product-size-label">Size</label>
@@ -56,7 +57,7 @@
             </select>
         </form>
 
-        <p class="product-stock">Stock: 25</p>
+        <p class="product-stock">Stock: {{product.stock}}</p>
         <div class="cta-buttons">
             <button class="buy-now">
                 <img src="/buynow.png" alt="buy now">
@@ -67,16 +68,9 @@
                 <p>ADD TO CART</p>
             </button>
         </div>
-        }
     </div>
-
-
+    
+}
+    
 </div>
 
-<div class="additional-info">
-    <table>
-        <thead>frfr</thead>
-        <td>frrfr</td>
-        <tfoot>frfr</tfoot>
-    </table>
-</div>

@@ -4,5 +4,10 @@ export interface Article{
     imgURL: String,
     price: number,
     originalPrice: number, 
-    disscount: number
+    disscount: number,
+    description: String,
+    reviewAverage: String,
+    reviewAmount: String,
+    soldAmount: String,
+    stock: number
 }
