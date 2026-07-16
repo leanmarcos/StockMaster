@@ -8,6 +8,7 @@ import { HomePage } from './components/home-page/home-page-component';
 export const routes: Routes = [{path: '', component: HomePage},
     {path: 'product/:id', component: SelectedProduct}, 
     {path: 'home', component: HomePage },
+    {path: '404', component: NotFound},
     {path: '**' , component: NotFound}];
 
 @NgModule({

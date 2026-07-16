@@ -9,17 +9,16 @@
         </div>
     </div>
 
-
-
     <div class="product-right">
 
+        @if(product){
         <div class="product-hot">
             <p>HOT!</p>
         </div>
 
         <div class="product-main-info">
 
-            <h2 class="product-name">New Balance 530 unisex</h2>
+            <h2 class="product-name">{{product.name}}</h2>
             <p class="product-description">The original MR530 combines the aesthetics of the turn of the millennium with
                 the reliability of a high-mileage running shoe. The new 530 model offers a contemporary, everyday style
                 with a performance-oriented design. The segmented ABZORB midsole is paired with a classic upper design
@@ -33,7 +32,7 @@
         </div>
 
         <div class="product-price">
-            <p class="product-disscount">20% OFF</p>
+            <p class="product-disscount">{{product.disscount}}% OFF</p>
             <p class="product-actual-price">USD <span class="product-original-price">250</span> 150</p>
         </div>
 
@@ -68,7 +67,10 @@
                 <p>ADD TO CART</p>
             </button>
         </div>
+        }
     </div>
+
+
 </div>
 
 <div class="additional-info">

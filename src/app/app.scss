@@ -23,9 +23,14 @@
     gap: 7%;
 }
 
+#logo{
+    font-family: "Jockey One", sans-serif;
+    font-size: 48px;
+    color: var(--beige);
+    cursor: pointer;
+}
 .headerRight a, .headerRight img, .headerLeft a, .headerLeft img{
-    display: inline-block;
-        font-family: "Lato", sans-serif;
+    font-family: "Lato", sans-serif;
     color: var(--beige);
     font-size: larger;
      transition: transform 0.2s ease;
@@ -40,11 +45,6 @@
     cursor: pointer;
 }
 
-
-
-#logo{
-    height: var(--desktop_img_size_m);
-}
 
 .headerIcon{
     height: var(--desktop_img_size_s);
