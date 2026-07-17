@@ -28,3 +28,6 @@ sponsored-banner - el componente que muestra las publicidad que aparecen en el h
 
 Lista de servicios
 products.ts - actua como "base de datos" local, almacenando todos los productos y dando las funcionalidades necesarias para que puedan acceder a ellos los demas componentes
+
+
+Link Stackblitz: https://stackblitz.com/~/github.com/leanmarcos/StockMaster?view=editor
