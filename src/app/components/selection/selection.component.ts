@@ -21,7 +21,7 @@ export class Selection {
         this.products$ = products.getAll();
     }
 
-    getToProduct(id : number){
+    getToProduct(id : string){
         this.router.navigate(['/product', id])
     }
 }
