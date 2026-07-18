@@ -1,16 +1,16 @@
 # Entrega TPE Seminario Angular
 
-Datos del integrante
+# Datos del integrante
 Nombre: Leandro Marcos
 DNI: 46.094.776
 Email: leandromarcos499@gmail.com
 Carrera: TUDAI
 Sede: Tandil
 
-Explicación de temática
+# Explicación de temática
 Elegí hacer un e-commerce de productos generales al estilo Mercado Libre. La idea era tener varios productos y hacer varios componentes con el caso de una supuesta tienda real.
 
-Guía de uso:
+# Guía de uso
 
 Ruteo
 / - home
@@ -29,5 +29,5 @@ sponsored-banner - el componente que muestra las publicidad que aparecen en el h
 Lista de servicios
 products.ts - actua como "base de datos" local, almacenando todos los productos y dando las funcionalidades necesarias para que puedan acceder a ellos los demas componentes
 
-
-Link Stackblitz: https://stackblitz.com/~/github.com/leanmarcos/StockMaster?view=editor
+# Link Stackblitz: https://stackblitz.com/~/github.com/leanmarcos/StockMaster?view=editor
+# Link API MockAPI: https://6a5b7ba864f700df5bd70592.mockapi.io/api/:endpoint
