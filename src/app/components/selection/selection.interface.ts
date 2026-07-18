@@ -1,10 +1,10 @@
 export interface Article{
-    id: number
+    id: string,
     name : String,
     imgURL: String,
     price: number,
     originalPrice: number, 
-    disscount: number,
+    discount: number,
     description: String,
     reviewAverage: String,
     reviewAmount: String,

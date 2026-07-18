@@ -3,17 +3,17 @@
 </div>
 
 <div class="selection-inside">
-  @for (product of products; track product.id) {
+  @for (product of products$ | async; track product.id) {
     <div class="product-card" (click)="getToProduct(product.id)">
       <div class="product-img" [style.background-image]="'url(' + product.imgURL + ')'"></div>
 
-      @if (product.disscount > 0) {
-        <p class="disscount">{{ product.disscount }}% OFF</p>
+      @if (product.discount > 0) {
+        <p class="discount">{{ product.discount }}% OFF</p>
       }
 
       <h4 class="product-name">{{ product.name }}</h4>
 
-      @if (product.disscount > 0) {
+      @if (product.discount > 0) {
         <p class="product-price">USD <span class="temp-deprecated-price">{{ product.originalPrice }}</span> {{ product.price }}</p>
       } @else {
         <p class="product-price">USD {{ product.price }}</p>

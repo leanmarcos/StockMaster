@@ -1,6 +1,6 @@
 <div class="product-inside">
 
-     @if(product){
+     @if(product$ | async; as product){
     <div class="product-selected-left">
         <p class="footprint">Home / Sneakers / {{product.name}}</p>
 
@@ -28,8 +28,8 @@
         </div>
 
        <div class="product-price">
-    @if (product.disscount > 0) {
-        <p class="product-disscount">{{ product.disscount }}% OFF</p>
+    @if (product.discount > 0) {
+        <p class="product-disscount">{{ product.discount }}% OFF</p>
         <p class="product-actual-price">
             USD <span class="product-original-price">{{ product.originalPrice }}</span> {{ product.price }}
         </p>
