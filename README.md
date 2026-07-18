@@ -27,7 +27,7 @@ Lista de componentes
 - sponsored-banner - el componente que muestra las publicidad que aparecen en el home
 
 Lista de servicios
-products.ts - actua como "base de datos" local, conectandose a MockAPI y dando las funcionalidades necesarias para que puedan acceder a ellos los demas componentes
+- products.ts - actua como "base de datos" local, conectandose a MockAPI y dando las funcionalidades necesarias para que puedan acceder a ellos los demas componentes
 
 # Link Stackblitz: https://stackblitz.com/~/github.com/leanmarcos/StockMaster?view=editor
 # Link API MockAPI: https://6a5b7ba864f700df5bd70592.mockapi.io/api/:endpoint
